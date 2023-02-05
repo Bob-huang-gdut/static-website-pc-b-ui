@@ -31,5 +31,8 @@ export default defineConfig({
     },
   ],
   npmClient: 'pnpm',
+  history: {
+    type: 'hash'
+  },
 });
 
