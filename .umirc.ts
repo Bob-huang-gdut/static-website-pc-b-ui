@@ -18,21 +18,25 @@ export default defineConfig({
       name: '网页成品',
       path: '/home',
       component: './Home',
+      icon: 'HomeOutlined'
     },
     {
       name: '图片素材',
       path: '/resource',
       component: './Access',
+      icon: 'PictureOutlined'
     },
     {
       name: '常见问题',
       path: '/faq',
       component: './Table',
+      icon: 'QuestionCircleOutlined'
     },
     {
       name: '帮助中心',
       path: '/help',
       component: './Table',
+      icon: 'IssuesCloseOutlined'
     },
   ],
   npmClient: 'pnpm',
