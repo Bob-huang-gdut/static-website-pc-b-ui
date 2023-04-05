@@ -38,6 +38,12 @@ export default defineConfig({
       component: './Table',
       icon: 'IssuesCloseOutlined'
     },
+    {
+      name: 'tree demo',
+      path: '/tree',
+      component: './Tree',
+      icon: 'IssuesCloseOutlined'
+    },
   ],
   npmClient: 'pnpm',
   history: {
