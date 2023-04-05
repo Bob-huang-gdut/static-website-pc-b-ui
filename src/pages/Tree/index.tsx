@@ -115,12 +115,12 @@ const Page: React.FC = () =>
 {
 
   const [gData, setGData] = useState(defaultData);
-  const [expandedKeys] = useState([]);
+  const [selectKeys] = useState(["336126640478281781"]);
 
   const onDragEnter: TreeProps['onDragEnter'] = (info) => {
     console.log(info);
-    // expandedKeys 需要受控时设置
-    // setExpandedKeys(info.expandedKeys)
+    // selectKeys 需要受控时设置
+    // setselectKeys(info.selectKeys)
   };
 
   const onDrop: TreeProps['onDrop'] = (info) =>
@@ -215,7 +215,8 @@ const Page: React.FC = () =>
   return (
     <Tree
       className="draggable-tree"
-      defaultExpandedKeys={expandedKeys}
+      defaultExpandedKeys={selectKeys}
+      defaultSelectedKeys={selectKeys}
       draggable
       blockNode
       onDragEnter={onDragEnter}
