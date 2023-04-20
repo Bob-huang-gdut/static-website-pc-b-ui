@@ -44,6 +44,12 @@ export default defineConfig({
       component: './Tree',
       icon: 'IssuesCloseOutlined'
     },
+    {
+      name: 'code demo',
+      path: '/code',
+      component: './Code',
+      icon: 'IssuesCloseOutlined'
+    },
   ],
   npmClient: 'pnpm',
   history: {
